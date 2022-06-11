@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <form action="/">
+            <div class="input-field">
+                <label for="Book-name">Title</label>
+                <input type="text" id="Book-name">
+                <span></span>
+            </div>
+            <div class="input-field">
+                <label for="Author-name">Author</label>
+                <input type="text" id="Author-name">
+                <span></span>
+            </div>
+            <button type="submit">Add book</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="book-infos">
+            <ul>
+                <li class="name">Title</li>
+                <li class="author">Author</li>
+                <li class="status">Status</li>
+                <li class="delete"></li>
+            </ul>
+        </div>
+        <div class="book-cards">
+        </div>
+    </div>
+</body>
+</html>

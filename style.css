@@ -1,0 +1,73 @@
+*{
+    list-style: none;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.sidebar{
+    background-color: rgb(29, 114, 240);
+    height: 100%;
+    position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    left: 10px;
+    top:0;
+    width: 80%;
+}
+form>*{
+    margin:15px 0;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-field>span{
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    left: 0;
+    top: 40px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+li{
+    align-self: center;
+}
+.book-cards .delete{
+    color: white;
+    background-color: red;
+    width: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+.book-cards .status{
+    color: red;
+    cursor: pointer;
+}
+.book-cards .read{
+    color: green;
+}
+.book-cards{
+    background-color: rgb(207, 204, 200);
+}
+.book-cards>.book-infos{
+    margin: 0;
+}
+.book-cards>.book-infos:nth-child(2n+1){
+    background-color: black;
+    color: white;
+}
